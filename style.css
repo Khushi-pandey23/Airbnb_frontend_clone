@@ -1,0 +1,454 @@
+body{
+    overflow-x: hidden;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+@media (min-width:600px){
+    .parent{
+        display: flex;
+        gap: 10px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo{
+        width: 140px;
+        height: 53px;
+        margin: 3px 50px;
+    }
+    .menu{
+        display: flex;
+        gap: 30px;
+        margin-top: 5px;
+        align-items: center;
+        font-size: 20px;
+    }
+    .toprightcorner{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        margin-right: 50px;
+    }
+    .profile{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 50px;
+        border: 2px solid lightgrey;
+        border-radius:50px;
+        padding: 10px 10px;
+    }
+    /* Search Bar */
+    .searchbar{
+        position: sticky;
+        top: 0;
+        display: flex;
+        gap: 0px;
+        justify-content: center;
+        align-items: center;
+        font-size: 13px;
+        background-color: white;
+    }
+    .firstpart{
+        height: 60px;
+        border: 2px solid rgb(237, 237, 237);
+        padding-left: 30px;
+        padding-right: 200px;
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+        border-right: none;
+        box-shadow: 0 4px 2px 0 rgba(0, 0, 0, 0.1);
+    }
+    .secondpart{
+        height: 60px;
+        width: 100px;
+        border: 2px solid rgb(237, 237, 237);
+        padding-left: 20px;
+        padding-right: 40px;
+        border-right: none;
+        box-shadow: 0 4px 2px 0 rgba(0, 0, 0, 0.1);
+    }
+    .fourthpart{
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border: 2px solid rgb(237, 237, 237);
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+        box-shadow: 1px 4px rgba(0, 0, 0, 0.1);
+    }
+    .who{
+        margin-left: 10px;
+        padding-right: 100px;
+    }
+    .pinkcolor{
+        background-color: rgb(255, 61, 94);
+        border-radius: 50%;
+        padding: 15px;
+        margin-right: 10px;
+    }
+    .widgets{
+        display: flex;
+        gap: 0px;
+        align-items: center;
+    }
+    /* widget amazing view */
+    .amazingview{
+        width: fit-content;
+        margin-left: 100px;
+        margin-top: 18px;
+    }
+    .amazingview-text{
+        font-size: 12px;
+    }
+    /* widget amazing pools */
+    .amazingpools{
+        width: fit-content;
+        margin-left: 40px;
+        margin-top: 18px;
+    }
+    .amazingpools-text{
+        font-size: 13px;
+        color: gray;
+        font-weight: 500;
+    }
+    .amazingpools-img{
+        width: 28px;
+        padding-left: 20px;
+    }
+    /* widget OMG! */
+    .omg-text{
+        font-size: 13px;
+        color: gray;
+        padding-left: 15px;
+        font-weight: 500;
+    }
+    /* widget Bed & Breakfast */
+    .bedandbreakfast-text{
+        font-size: 13px;
+        color: gray;
+        padding-left: 15px;
+        font-weight: 500;
+    }
+    .bedandbreakfast-img{
+        width: 28px;
+        padding-left: 45px;
+    }
+    /* widget Farms */
+    .farms-text{
+        font-size: 13px;
+        color: gray;
+        padding-left: 15px;
+        font-weight: 500;
+    }
+    /* Filter */
+    .filters{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        width: fit-content;
+        margin-left: 40px;
+        margin-top: 0px;
+        border: 2px solid lightgrey;
+        border-radius: 15px;
+        padding: 1px 10px;
+    }
+    .filters-text{
+        font-size: 13px;
+        color: gray;
+        padding-left: 15px;
+        font-weight: 500;
+    }
+    .filters-img{
+        width: 28px;
+        padding-left: 25px;
+    }
+    .displaytotal{
+        display: flex;
+        align-content: center;
+        justify-content: left;
+        margin-left: 10px;
+        border: 2px solid lightgrey;
+        border-radius: 15px;
+        padding: 0 10px;
+    }
+    .displaytotal-img{
+        padding-top: 18px;
+        padding-left: 20px;
+    }
+    /* Pictures */
+    .pictures{
+        display: flex;
+        justify-content: center;
+        margin-left: 45px;
+        flex-wrap: wrap;
+    }
+    .pict{
+        padding: 10px;
+    }
+    .img{
+        width: 320px;
+        border-radius: 20px;
+    }
+    .heart{
+        position: absolute;
+        right: 10px;
+    }
+    .sequential{
+        display: flex;
+        justify-content: space-between;
+    }
+    .star{
+        padding-top: 25px;
+    }
+    .rating{
+        display: flex;
+        justify-content: right;
+    }
+    h4{
+        padding-right: 25px;
+    }
+    .btn{
+        width: 120px;
+        height: 40px;
+        position: fixed;
+        bottom: 30px;
+        left: 45%;
+        background-color: black;
+        color: white;
+        border: none;
+        border-radius: 50px;
+        font-size: 15px;
+        transition: 0.5s;
+    }
+    .btn:hover{
+        width: 125px;
+        height: 50px;
+        font-size: 15px;
+    }
+}
+
+@media(max-width:599px){
+    .parent{
+        display: flex;
+        gap: 10px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo{
+        width: 140px;
+        height: 53px;
+        margin: 3px 50px;
+    }
+    .menu{
+        display: flex;
+        gap: 30px;
+        margin-top: 5px;
+        align-items: center;
+        font-size: 20px;
+    }
+    .toprightcorner{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        margin-right: 50px;
+    }
+    .profile{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 50px;
+        border: 2px solid lightgrey;
+        border-radius:50px;
+        padding: 10px 10px;
+    }
+    /* Search Bar */
+    .searchbar{
+        position: sticky;
+        top: 0;
+        display: flex;
+        gap: 0px;
+        justify-content: center;
+        align-items: center;
+        font-size: 13px;
+        background-color: white;
+    }
+    .firstpart{
+        height: 100px;
+        border: 2px solid rgb(237, 237, 237);
+        padding-left: 30px;
+        padding-right: 200px;
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+        border-right: none;
+        box-shadow: 0 4px 2px 0 rgba(0, 0, 0, 0.1);
+    }
+    .secondpart{
+        height: 100px;
+        width: 100px;
+        border: 2px solid rgb(237, 237, 237);
+        padding-left: 20px;
+        padding-right: 40px;
+        border-right: none;
+        box-shadow: 0 4px 2px 0 rgba(0, 0, 0, 0.1);
+    }
+    .fourthpart{
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border: 2px solid rgb(237, 237, 237);
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+        box-shadow: 1px 4px rgba(0, 0, 0, 0.1);
+    }
+    .who{
+        margin-left: 10px;
+        padding-right: 100px;
+    }
+    .pinkcolor{
+        background-color: rgb(255, 61, 94);
+        border-radius: 50%;
+        padding: 15px;
+        margin-right: 10px;
+    }
+    .widgets{
+        display: flex;
+        gap: 0px;
+        align-items: center;
+    }
+    /* widget amazing view */
+    .amazingview{
+        width: fit-content;
+        margin-left: 100px;
+        margin-top: 18px;
+    }
+    .amazingview-text{
+        font-size: 12px;
+    }
+    /* widget amazing pools */
+    .amazingpools{
+        width: fit-content;
+        margin-left: 40px;
+        margin-top: 18px;
+    }
+    .amazingpools-text{
+        font-size: 13px;
+        color: gray;
+        font-weight: 500;
+    }
+    .amazingpools-img{
+        width: 28px;
+        padding-left: 20px;
+    }
+    /* widget OMG! */
+    .omg-text{
+        font-size: 13px;
+        color: gray;
+        padding-left: 15px;
+        font-weight: 500;
+    }
+    /* widget Bed & Breakfast */
+    .bedandbreakfast-text{
+        font-size: 13px;
+        color: gray;
+        padding-left: 15px;
+        font-weight: 500;
+    }
+    .bedandbreakfast-img{
+        width: 28px;
+        padding-left: 45px;
+    }
+    /* widget Farms */
+    .farms-text{
+        font-size: 13px;
+        color: gray;
+        padding-left: 15px;
+        font-weight: 500;
+    }
+    /* Filter */
+    .filters{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        width: fit-content;
+        margin-left: 40px;
+        margin-top: 0px;
+        border: 2px solid lightgrey;
+        border-radius: 15px;
+        padding: 1px 10px;
+    }
+    .filters-text{
+        font-size: 13px;
+        color: gray;
+        padding-left: 15px;
+        font-weight: 500;
+    }
+    .filters-img{
+        width: 28px;
+        padding-left: 25px;
+    }
+    .displaytotal{
+        display: flex;
+        align-content: center;
+        justify-content: left;
+        margin-left: 10px;
+        border: 2px solid lightgrey;
+        border-radius: 15px;
+        padding: 0 10px;
+    }
+    .displaytotal-img{
+        padding-top: 18px;
+        padding-left: 20px;
+    }
+    /* Pictures */
+    .pictures{
+        display: flex;
+        justify-content: center;
+        margin-left: 45px;
+        flex-wrap: wrap;
+    }
+    .pict{
+        padding: 10px;
+    }
+    .img{
+        width: 320px;
+        border-radius: 20px;
+    }
+    .heart{
+        position: absolute;
+        right: 10px;
+    }
+    .sequential{
+        display: flex;
+        justify-content: space-between;
+    }
+    .star{
+        padding-top: 25px;
+    }
+    .rating{
+        display: flex;
+        justify-content: right;
+    }
+    h4{
+        padding-right: 25px;
+    }
+    .btn{
+        width: 120px;
+        height: 40px;
+        position: fixed;
+        bottom: 30px;
+        left: 40%;
+        background-color: black;
+        color: white;
+        border: none;
+        border-radius: 50px;
+        font-size: 15px;
+        transition: 0.5s;
+    }
+    .btn:hover{
+        width: 125px;
+        height: 50px;
+        font-size: 15px;
+    }
+}
